@@ -1,3 +1,6 @@
+#
+#ceshi
+
 from flask import Flask
 from flask import render_template, request
 
@@ -9,6 +12,4 @@ def index():
 
 if __name__ == "__main__": # 第二次确认是main
     app.run()
-
-
 
