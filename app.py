@@ -40,5 +40,9 @@ def genai_result():
     r = response.candidates[0].content.parts[0].text
     return(render_template("genai_result.html", r=r))
 
+@app.route("/paynow", methods = ["GET", "POST"])
+def paynow():
+    return(render_template("paynow.html"))
+
 if __name__ == "__main__": # 第二次确认是main
     app.run()
